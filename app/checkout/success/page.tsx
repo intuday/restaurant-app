@@ -114,7 +114,7 @@ function SuccessPageContent() {
             <span className="text-4xl font-black text-orange-500 font-mono tracking-widest"> </span>
               {order?.orderNo}
           <p className="font-semibold text-white-800 dark:text-white uppercase font-mono">
-                    ID: #{order.id.slice(0, 8)}
+                    ID: #{order?.id?.slice(0, 8)}
                   </p>
           </div>
           

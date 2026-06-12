@@ -1,5 +1,5 @@
 import AnimatedSection from './AnimatedSection';
-import FeaturedFoods from './components/FeaturedFoods';
+// import FeaturedFoods from './FeaturedFoods';
 
 export default function FoodCategories() {
   const categories = [
