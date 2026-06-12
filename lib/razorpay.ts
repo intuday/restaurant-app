@@ -318,3 +318,17 @@ export const verifyPaymentSignature = (
     
   return generatedSignature === signature;
 };
+  export const verifyWebhookSignature = (
+  payload: string,
+  signature: string
+): boolean => {
+  if (!keySecret) return false;
+
+  const expectedSignature = crypto
+    .createHmac("sha256", keySecret)
+    .update(payload)
+    .digest("hex");
+
+  return expectedSignature === signature;
+
+};
