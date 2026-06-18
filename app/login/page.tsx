@@ -1001,6 +1001,7 @@
 //     </div>
 //   );
 // }
+'use effect'
 'use client';
 
 import { useState, Suspense } from 'react';
